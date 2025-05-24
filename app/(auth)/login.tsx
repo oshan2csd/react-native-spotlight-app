@@ -40,7 +40,7 @@ export default function login() {
 //   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container}>        
         {/* BRAND SECTION */}
         <View style={styles.brandSection}>
             <View style={styles.logoContainer}>
@@ -75,7 +75,7 @@ export default function login() {
             </TouchableOpacity>
             
             {/* email/password sign-in */}
-            <TouchableOpacity
+            {/* <TouchableOpacity
                 style={styles.googleButton}
                 onPress={() => {
                     console.log('Email Sign-In Pressed');
@@ -84,7 +84,8 @@ export default function login() {
             >
                 <Ionicons name="mail" size={24} color={COLORS.primary} />
                 <Text style={styles.googleButtonText}>Sign in with Email</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
+            
             <Text style={styles.termsText}>
                 By signing in, you agree to our terms and privacy policy.
             </Text>
