@@ -8,6 +8,19 @@ export default function TabLayout() {
     <Tabs screenOptions={{
         tabBarShowLabel: false,
         headerShown: false,
+        tabBarActiveTintColor: COLORS.primary,
+        tabBarInactiveTintColor: COLORS.grey,
+        tabBarStyle: {
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            elevation: 0,
+            backgroundColor: "black",
+            borderTopWidth: 0,
+            height: 80,
+            paddingBottom: 8,
+        },
         }}
     >
         <Tabs.Screen
@@ -15,7 +28,7 @@ export default function TabLayout() {
             options={{
             title: 'Feed',
             tabBarIcon: ({ color,size }) => (
-                <Ionicons name="home" color={COLORS.primary} size={size} />
+                <Ionicons name="home" color={color} size={size} />
             ),
             }}
         />
@@ -24,7 +37,7 @@ export default function TabLayout() {
             options={{
             title: 'Bookmarks',
             tabBarIcon: ({ color, size }) => (
-                 <Ionicons name="bookmark" color={COLORS.primary} size={size} />
+                 <Ionicons name="bookmark" color={color} size={size} />
             ),
             }}
         />
@@ -33,7 +46,7 @@ export default function TabLayout() {
             options={{
             title: 'Create',
             tabBarIcon: ({ color,size }) => (
-                 <Ionicons name="add-circle" color={COLORS.primary} size={size} />
+                 <Ionicons name="add-circle" color={color} size={size} />
             ),
             }}
         />
@@ -42,7 +55,7 @@ export default function TabLayout() {
             options={{
             title: 'Notifications',
             tabBarIcon: ({ color,size }) => (
-                 <Ionicons name="heart" color={COLORS.primary} size={size} />
+                 <Ionicons name="heart" color={color} size={size} />
             ),
             }}
         />
@@ -51,7 +64,7 @@ export default function TabLayout() {
             options={{
             title: 'Profile',
             tabBarIcon: ({ color, size }) => (
-                 <Ionicons name="person-circle" color={COLORS.primary} size={size} />
+                 <Ionicons name="person-circle" color={color} size={size} />
             ),
             }}
         />
