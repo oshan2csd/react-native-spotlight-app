@@ -1,13 +1,11 @@
-import { Link } from "expo-router";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { styles } from "../../styles/auth.styles.js";
 
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Link href="/notifications">Visit Notifications page</Link>
+      <Text>Feed screen in Tabs</Text>
     </View>
   );
 }
-  
